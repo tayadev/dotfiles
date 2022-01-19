@@ -1,0 +1,12 @@
+#!/bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x picom > /dev/null || picom
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+
+bspc config focus_follows_pointer true
+
+bspc config border_width 0
+
+bspc rule -a discord desktop=^3
