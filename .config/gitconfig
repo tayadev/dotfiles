@@ -1,2 +1,8 @@
 [init]
 	defaultBranch = main
+[user]
+	email = taya@taya.one
+	name = Taya
+	signingkey = 2856CC7F77651D7D
+[commit]
+	gpgsign = true
