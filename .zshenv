@@ -4,8 +4,6 @@ export XDG_CONFIG_HOME=$HOME/.config
 
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
 
-export HISTFILE=$XDG_CACHE_HOME/bash_history
-
 export GIT_CONFIG_GLOBAL=$XDG_CONFIG_HOME/gitconfig
 
 export GNUPGHOME=$XDG_DATA_HOME/gnupg

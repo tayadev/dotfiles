@@ -3,5 +3,6 @@
 [user]
 	email = taya@taya.one
 	name = Taya
+	signingkey = D3AEDC7E4F713F1B
 [commit]
 	gpgsign = true
