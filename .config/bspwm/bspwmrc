@@ -6,7 +6,12 @@ pgrep -x picom > /dev/null || picom &
 setxkbmap ch
 feh --bg-fill --no-fehbg ~/Downloads/miku.jpg
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 0
+desktops=(1 2 3 4 5 6 7 8 9 0)
+monitorAmount=$(bspc query -M | wc -l)
+desktopsPerMonitor=$((${#desktops[@]}/monitorAmount))
+for i in $(seq $monitorAmount); do
+    bspc monitor "^$i" -d "${desktops[@]:$(((i-1)*desktopsPerMonitor)):$desktopsPerMonitor}"
+done
 
 bspc config focus_follows_pointer true
 
