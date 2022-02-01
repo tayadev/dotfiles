@@ -25,6 +25,8 @@ fi
 alias ls='ls --color=auto -a'
 alias c='clear;ls'
 alias dots='git --git-dir=$HOME/.dots-git/ --work-tree=$HOME'
+alias tt='trash-put'
+alias ssh='kitty +kitten ssh'
 
 function battery() echo $(cat /sys/class/power_supply/BAT0/status) - $(cat /sys/class/power_supply/BAT0/capacity)%
 
